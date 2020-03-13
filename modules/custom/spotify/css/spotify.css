@@ -1,0 +1,101 @@
+.label-album{
+    display: block;
+    margin: 5px 10px 5px 20px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.title-lanzamiento{
+    display: block;
+    color: white;
+    font-size: 23px;
+
+}
+
+
+.list-lanzamiento{
+    background-color: black;
+}
+
+.item-lista {
+    display: inline-block;
+    margin: 2px 2px 9px 2px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: white;
+}
+
+.imagen-album{
+
+    border-radius: 8px;
+}
+
+.name-album{
+    background-color: white;
+}
+
+.name-artist{
+    background-color: #2a2af1;
+    color: white;
+    display: inline-block;
+    border-radius: 37px;
+    padding: 0px 8px 0px 8px;
+    margin-left: 20px;
+}
+
+
+a:link {
+    color: white;
+  }
+  
+  a:visited {
+    color: white;
+  }
+  
+  a:hover {
+    color: white;
+  }
+  
+  a:active {
+    color: white;
+  }
+
+
+  .info-artista-id{
+      background-color: black;
+
+  }
+
+  .img-artist{
+    display: inline-block;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+  }
+
+  .name-id-artista{
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+    padding-left: 30px;
+
+  }
+
+  .img-round{
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+
+  }
+
+  .enlace-artista{
+      display: block;
+  }
+
+  .label-enlace{
+      color: blue !important;
+      font-size: 16px;
+
+  }

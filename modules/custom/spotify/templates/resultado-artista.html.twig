@@ -1,0 +1,50 @@
+{{ attach_library('spotify/spotify') }}
+{% set infobasica = infoBasicaArtista  %}
+{% set listalbum = album  %}
+
+<div class="col-md-12 info-artista-id">
+
+    <div class="row">
+
+        <div class="col-md-12">
+                <div class="col-md-4 img-artist">
+                    <img src="{{infobasica.images[2].url}}" class="img-round"/>
+                </div>
+                <div class="col-md-8 name-id-artista" >
+
+                    {{infobasica.name}}
+                    <div class="col-md-12 enlace-artista">
+                        <a href="{{infobasica.external_urls.spotify}}" class="label-enlace"> Ir a la página del artista</a>
+                    </div>
+                </div>
+
+        </div>
+
+        <div class="col-md-12">
+            <table>
+                <tr>
+                    <td> Foto</td>
+                    <td> Album</td>
+                    <td> Canción</td>
+                </tr>
+                {% for listal in listalbum.tracks %}
+                    <tr>
+                        <td>
+                            <img src="{{listal.album.images[2].url}}"/>
+                        </td>
+                        <td>
+                            {{listal.album.name}}
+                        </td>
+                        <td>
+                            {{listal.name}}
+                        </td>
+                    </tr>
+                {% endfor %}
+
+            </table>
+
+        </div>
+    
+    </div>
+
+</div>

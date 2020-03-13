@@ -1,0 +1,32 @@
+{{ attach_library('spotify/spotify') }}
+{% set data = results  %}
+
+<div class="col-md-12">
+
+    <div class="row">
+        <div class="col-md-12 list-lanzamiento">
+           <p class="title-lanzamiento">Proximos lanzamientos en Colombia</p>
+            
+     
+        {% for d in data %}
+            {% for item in d.items %}
+                <div class="col-md-3 item-lista">
+                    <div class="col-12">
+                            <img src="{{item.images[1].url}}" width="{{item.images[1].width}}" height="{{item.images[1].height}}"/>
+                    </div>
+                    <div class="col-12 name-album">
+                        <p class="label-album">{{ item.name}}</p>
+              
+                        {% for listartists in item.artists %}
+                            <div class="col-6 name-artist">
+                                <a href="artista/{{listartists.id}}" >{{ listartists.name}}</a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+        {% endfor %}
+        </div>   
+    </div>
+
+</div>

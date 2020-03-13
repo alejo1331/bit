@@ -1,0 +1,18 @@
+spotify:
+  version: VERSION
+  header: true  
+  css:
+    theme:
+      css/spotify.css: {}
+  js:
+    js/spotify.js: {}    
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.ui
+    - core/drupal.ajax
+    - core/drupal.dialog
+    - core/system
+    - core/drupal.dialog.ajax

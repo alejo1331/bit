@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * Contains spotify.module.
+ */
+
+use Drupal\views\Views;
+use Drupal\views\ViewExecutable;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\views\Plugin\views\query\QueryPluginBase;
+/**
+ * Theme hook
+ */
+function spotify_theme($existing, $type, $theme, $path) {
+     
+    return array(
+        'resultados-lanzamientos' => array(
+                                'variables' =>  array('results' => null),
+                                'template' => 'resultado-lanzamientos'),
+        'resultado-artista' => array(
+                                'variables' =>  array('infoBasicaArtista' => null, 
+                                'album' => null,
+                                'info' => null),
+                                'template' => 'resultado-artista'),                        
+    );
+}

@@ -1,0 +1,13 @@
+spotify.content:
+  path: '/lanzamientos'
+  defaults:
+    _controller: '\Drupal\spotify\Controller\SpotifyController::content'
+  requirements:
+    _permission: 'access content'
+
+spotify.artista:
+  path: '/artista/{id}'
+  defaults:
+    _controller: '\Drupal\spotify\Controller\SpotifyController::infoartista'
+  requirements:
+    _permission: 'access content'
